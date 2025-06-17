@@ -1,0 +1,53 @@
+//Styles
+@import "../styles/index.scss";
+
+.container_header {
+  .section-sub-menu {
+    background-color: $primary;
+    padding: 1rem 6rem;
+
+    .desconto {
+      p {
+        color: white;
+      }
+    }
+  }
+
+  .section-menu {
+    background-color: $secondary;
+    .container-menu {
+      align-items: center;
+      padding: 0.5rem 6rem;
+      .logo {
+        img {
+          width: 10%;
+        }
+      }
+
+      nav {
+        ul {
+          li {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .section-fachada {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+
+    .text-fachada {
+      flex-direction: column;
+      height: 100%;
+
+      h1,
+      p {
+        color: white;
+      }
+    }
+  }
+}

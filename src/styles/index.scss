@@ -1,0 +1,203 @@
+//fonts-google
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+//Reset Geral
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+// Cores
+$primary: #1E3A8A;
+$secondary: #6B7280;
+$tertiary: #F97316;
+
+// Botões
+$button-bg: rgba(255, 255, 255, 1);
+$button-color: rgba(34, 110, 147, 1);
+$button-hover-color: #fff;
+$button-active-bg: red;
+$button-hover-bg: $secondary;
+$button-border: 1px solid rgba(34, 110, 147, 1);
+$button-radius: 0.5rem;
+$button-padding: 0.5rem 1rem;
+$button-font-size: 1rem;
+$button-font-weight: 700;
+$button-icon-size: 1.5rem;
+$button-icon-color: #fff;
+
+// Botões
+.btn {
+  background-color: $button-bg;
+  color: $button-color;
+  font-weight: $button-font-weight;
+  padding: $button-padding;
+  border-radius: $button-radius;
+  border: $button-border;
+  font-size: $button-font-size;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  font-family: Lato, sans-serif;
+  transition: all 0.2s ease-in-out;
+
+  img {
+    width: $button-icon-size;
+    height: auto;
+  }
+
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+
+  &:active {
+    background-color: $button-active-bg;
+  }
+}
+
+.btn.zap {
+  background-image: url("../public/icons/whatsapp.svg");
+  background-size: 32px 32px;
+  background-position: 1rem center;
+  background-repeat: no-repeat;
+  padding-left: 3.5rem;
+}
+
+// Tipografia
+$titulo-font-size: 2rem;
+$titulo-font-weight: 500;
+$titulo-color: black;
+$text-font-size: 1rem;
+$text-font-weight: 500;
+$text-color: black;
+
+// Tipografia
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: $titulo-font-size;
+  font-weight: $titulo-font-weight;
+  color: $titulo-color;
+}
+
+p,
+a {
+  font-size: $text-font-size;
+  font-weight: $text-font-weight;
+  color: $text-color;
+  line-height: 2rem;
+}
+
+// Ultilidades
+.container {
+  padding: 2.5rem 6rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gap-p {
+  gap: 0.5rem;
+}
+
+.gap-md {
+  gap: 1rem;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+.gap-xl {
+  gap: 3rem;
+}
+
+.gap-xxl {
+  gap: 4rem;
+}
+
+.grid2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+//Mobile
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem; // Reduz tipografia para caber melhor
+  }
+
+  p,
+  a {
+    font-size: 0.8rem;
+  }
+
+  .grid2col {
+    grid-template-columns: 1fr; // Empilha colunas
+  }
+
+  .grid3col {
+    grid-template-columns: 1fr; // Também empilha colunas
+  }
+
+  .gap-lg {
+    gap: 1rem;
+  }
+
+  .gap-xl {
+    gap: 1.5rem;
+  }
+
+  .gap-xxl {
+    gap: 2rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
