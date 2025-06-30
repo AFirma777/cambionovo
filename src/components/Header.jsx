@@ -6,7 +6,7 @@ import '../styles/Header.scss'
 import whats from '../assets/icons/whatsapp.svg';
 import instagram from '../assets/icons/instagram.svg';
 import logo from '../assets/logo.png';
-import fachada from '../assets/fachada.jpg';
+import fachada from '../assets/fachada.png';
 
 const Header = () => {
     return (

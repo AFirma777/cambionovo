@@ -1,49 +1,55 @@
-//Styles
 @import "../styles/index.scss";
 
-.ofertas-container {
+.ofertas {
   padding: 2rem;
   background-color: #f9fafb;
-}
 
-.ofertas-titulo {
-  color: $primary;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
+  &__titulo {
+    color: $primary;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 
-.ofertas-swiper {
-  padding-bottom: 1rem;
-}
+  &__swiper {
+    padding-bottom: 1rem;
+  }
 
-.ofertas-slide {
-  display: flex;
-  justify-content: center;
-}
+  &__slide {
+    display: flex;
+    justify-content: center;
+  }
 
-.oferta-card {
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+  &__card {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
-.oferta-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
+    &-content {
+      padding: 1rem;
 
-.oferta-card-content {
-  padding: 1rem;
-}
+      .ofertas__nome {
+        color: $secondary;
+        margin-bottom: 0.3rem;
+      }
 
-.oferta-nome {
-  color: $secondary;
-  margin-bottom: 0.5rem;
-}
+      .ofertas__descricao {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+      }
 
-.oferta-preco {
-  color: $tertiary;
-  font-weight: bold;
+      .ofertas__preco {
+        color: $tertiary;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
 }
